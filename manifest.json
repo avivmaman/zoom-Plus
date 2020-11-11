@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Advanced zoom player options",
+  "description": "This addod will allow to users to play videos faster and jump seconds .",
+  "version": "0.4",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.zoom.us/rec/play/*"],
+      "js": ["js.js"]
+    }
+  ],
+  "web_accessible_resources": ["js.js"]
+}
